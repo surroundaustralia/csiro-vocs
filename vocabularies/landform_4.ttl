@@ -13,7 +13,7 @@
 
 lnd:element-dimension-height a skos:Concept,
         <http://www.w3.org/ns/sosa/ObservableProperty> ;
-    skos:altLabel "Depth of landform element"@en ;
+    skos:altLabel "Depth of landform element1"@en ;
     skos:broader lnd:element-dimensions ;
     skos:definition "difference in elevation between the upper and lower margins of the element, measured along any slope line. Height can mean quite different things and must be carefully defined. For crests, ridges and hillocks, define the upper margin as the point where the selected slope line coalesces with others to form the ridge line. For depressions, define the lower margin as the point where the selected slope line coalesces with others to form the course line."@en ;
     skos:inScheme <http://registry.it.csiro.au/def/soil/au/asls/landform> ;

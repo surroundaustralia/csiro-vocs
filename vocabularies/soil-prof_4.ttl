@@ -15,7 +15,7 @@ sp1:coarse-fragments-abundance-0 a skos:Concept ;
     owl:sameAs <http://anzsoil.org/def/au/asls/soil-profile/coarse-fragments-abundance-0> ;
     skos:broader sp1:coarse-fragments-abundance ;
     skos:definition "0%"@en,
-        "The percentage is estimated by eye using the charts in the yellow book for comparison. N_CF_ABUN"@en ;
+        "The percentage is estimated by eye using the charts in the yellow book for comparison. N_CF_ABUN1"@en ;
     skos:inScheme <http://registry.it.csiro.au/def/soil/au/asls/soil-prof> ;
     skos:notation "0" ;
     skos:prefLabel "No coarse fragments"@en .
