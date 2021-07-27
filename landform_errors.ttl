@@ -1,0 +1,1147 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+[] a sh:ValidationReport ;
+    sh:conforms false ;
+    sh:result [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform> ;
+            sh:resultMessage "Node Literal(\"<p>This register contains a machine-readable representation of the classifiers described in chapter 5 <i>Landform</i>, by J.G. Speight, in <a href=\"https://www.publish.csiro.au/book/5230\">Australian soil and land survey field handbook (3rd edn)</a>.</p> <p>In this technique for describing landforms, the whole land surface is viewed as a mosaic of tiles of odd shapes and sizes. The scheme is intended to produce a record of observations rather than inferences.</p>  <p>The data was converted from the print representation to this linked-data form by <a href=\"https://orcid.org/0000-0002-0693-1899\">Linda Gregory</a> assisted by <a href=\"https://orcid.org/0000-0002-3884-3420\">Simon J D Cox</a>.</p>\" = None, datatype=rdf:HTML) does not conform to one or more shapes in [ sh:datatype xsd:string ] , [ sh:datatype rdf:langString ]" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:OrConstraintComponent ;
+            sh:sourceShape [ sh:maxCount 1 ;
+                    sh:minCount 1 ;
+                    sh:or ( [ sh:datatype xsd:string ] [ sh:datatype rdf:langString ] ) ;
+                    sh:path skos:definition ] ;
+            sh:value "<p>This register contains a machine-readable representation of the classifiers described in chapter 5 <i>Landform</i>, by J.G. Speight, in <a href=\"https://www.publish.csiro.au/book/5230\">Australian soil and land survey field handbook (3rd edn)</a>.</p> <p>In this technique for describing landforms, the whole land surface is viewed as a mosaic of tiles of odd shapes and sizes. The scheme is intended to produce a record of observations rather than inferences.</p>  <p>The data was converted from the print representation to this linked-data form by <a href=\"https://orcid.org/0000-0002-0693-1899\">Linda Gregory</a> assisted by <a href=\"https://orcid.org/0000-0002-3884-3420\">Simon J D Cox</a>.</p>"^^rdf:HTML ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/morphological-types> ;
+            sh:resultMessage "More than 1 values on lnd:morphological-types->skos:definition" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/simple-erosional-landform-pattern-UH> ;
+            sh:resultMessage """Node Literal("<p>Undulating hills is a simple type of erosional landform pattern characterised by High relief and Gently inclined modal slope.</p>
+<p>Relief is High 90-300m (~150m)</p>
+<p>Modal terrain slope is Gently inclined 3-10% (~6%)</p>" = None, datatype=rdf:HTML) does not conform to one or more shapes in [ sh:datatype xsd:string ] , [ sh:datatype rdf:langString ]""" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:OrConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ;
+            sh:value """<p>Undulating hills is a simple type of erosional landform pattern characterised by High relief and Gently inclined modal slope.</p>
+<p>Relief is High 90-300m (~150m)</p>
+<p>Modal terrain slope is Gently inclined 3-10% (~6%)</p>"""^^rdf:HTML ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/landform-element-descriptions> ;
+            sh:resultMessage """Node Literal("<p>A landform element may be described by the following attributes, assessed withiin a circle of about 20 m radius:</p>
+<ul>
+<li>slope</li>
+<li>morphological type</li>
+<li>dimensions</li>
+<li>mode of geomorphological activity</li>
+<li>geomorphological agent</li>
+</ul>
+<p>These will establish most of the distinctions between landform elements that are implied by their geomorphological names. The glossary of types of landform elements occurring in Australia refers explicitly to this set of attributes. A landform element that has been described mayb thus be assigne a type name.</p>" = None, datatype=rdf:HTML) does not conform to one or more shapes in [ sh:datatype xsd:string ] , [ sh:datatype rdf:langString ]""" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:OrConstraintComponent ;
+            sh:sourceShape _:ub2bL178C17 ;
+            sh:value """<p>A landform element may be described by the following attributes, assessed withiin a circle of about 20 m radius:</p>
+<ul>
+<li>slope</li>
+<li>morphological type</li>
+<li>dimensions</li>
+<li>mode of geomorphological activity</li>
+<li>geomorphological agent</li>
+</ul>
+<p>These will establish most of the distinctions between landform elements that are implied by their geomorphological names. The glossary of types of landform elements occurring in Australia refers explicitly to this set of attributes. A landform element that has been described mayb thus be assigne a type name.</p>"""^^rdf:HTML ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/mode-of-geomorphological-activity> ;
+            sh:resultMessage """Node Literal("<p><img src="http://anzsoil.org/resources/yellowbook/Figure3.png"/></p> 
+<p> Figure 3 Modes of geomorphological activity </p>" = None, datatype=rdf:HTML) does not conform to one or more shapes in [ sh:datatype xsd:string ] , [ sh:datatype rdf:langString ]""" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:OrConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ;
+            sh:value """<p><img src="http://anzsoil.org/resources/yellowbook/Figure3.png"/></p> 
+<p> Figure 3 Modes of geomorphological activity </p>"""^^rdf:HTML ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/simple-erosional-landform-pattern-SL> ;
+            sh:resultMessage """Node Literal("<p>Steep low hills is a simple type of erosional landform pattern characterised by Low relief and Steep modal slope.</p>
+<p>Relief is Low 30-90m (~50m)</p>
+<p>Modal terrain slope is Steep 32-56% (~40%)</p>" = None, datatype=rdf:HTML) does not conform to one or more shapes in [ sh:datatype xsd:string ] , [ sh:datatype rdf:langString ]""" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:OrConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ;
+            sh:value """<p>Steep low hills is a simple type of erosional landform pattern characterised by Low relief and Steep modal slope.</p>
+<p>Relief is Low 30-90m (~50m)</p>
+<p>Modal terrain slope is Steep 32-56% (~40%)</p>"""^^rdf:HTML ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/streamwise-channel-pattern> ;
+            sh:resultMessage "More than 1 values on lnd:streamwise-channel-pattern->skos:definition" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/simple-erosional-landform-pattern-B> ;
+            sh:resultMessage "Node Literal(\"The Badlands simple erosional landform pattern is defined by various combinations of high slope values and low relief values. These combinations imply extremely close spacing of streams or valleys. Specifically, if one assumes a sawtooth terrain profile, the valley spacing implied is less than 100 m in areas with 50 m relief and less than 30 m in areas with 5 m relief; these values appear to accord with usage. {@en}\" = None, datatype=rdf:HTML) does not conform to one or more shapes in [ sh:datatype xsd:string ] , [ sh:datatype rdf:langString ]" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:OrConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ;
+            sh:value "The Badlands simple erosional landform pattern is defined by various combinations of high slope values and low relief values. These combinations imply extremely close spacing of streams or valleys. Specifically, if one assumes a sawtooth terrain profile, the valley spacing implied is less than 100 m in areas with 50 m relief and less than 30 m in areas with 5 m relief; these values appear to accord with usage. {@en}"^^rdf:HTML ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/streamwise-channel-pattern> ;
+            sh:resultMessage """Node Literal("<p><img src="http://anzsoil.org/resources/yellowbook/Figure4a.png"/></p>
+<p> Figure 4 (a) Stream-wise channel patterns. </p>" = None, datatype=rdf:HTML) does not conform to one or more shapes in [ sh:datatype xsd:string ] , [ sh:datatype rdf:langString ]""" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:OrConstraintComponent ;
+            sh:sourceShape _:ub2bL178C17 ;
+            sh:value """<p><img src="http://anzsoil.org/resources/yellowbook/Figure4a.png"/></p>
+<p> Figure 4 (a) Stream-wise channel patterns. </p>"""^^rdf:HTML ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/simple-erosional-landform-pattern-SR> ;
+            sh:resultMessage """Node Literal("<p>Steep rises is a simple type of erosional landform pattern characterised by Very low relief and Steep modal slope.</p>
+<p>Relief is Very low 9-30m (~15m)</p>
+<p>Modal terrain slope is Steep 32-56% (~40%)</p>" = None, datatype=rdf:HTML) does not conform to one or more shapes in [ sh:datatype xsd:string ] , [ sh:datatype rdf:langString ]""" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:OrConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ;
+            sh:value """<p>Steep rises is a simple type of erosional landform pattern characterised by Very low relief and Steep modal slope.</p>
+<p>Relief is Very low 9-30m (~15m)</p>
+<p>Modal terrain slope is Steep 32-56% (~40%)</p>"""^^rdf:HTML ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/mode-of-geomorphological-activity> ;
+            sh:resultMessage """Node Literal("<p><img src="http://anzsoil.org/resources/yellowbook/Figure3.png"/></p> 
+<p> Figure 3 Modes of geomorphological activity </p>" = None, datatype=rdf:HTML) does not conform to one or more shapes in [ sh:datatype xsd:string ] , [ sh:datatype rdf:langString ]""" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:OrConstraintComponent ;
+            sh:sourceShape _:ub2bL178C17 ;
+            sh:value """<p><img src="http://anzsoil.org/resources/yellowbook/Figure3.png"/></p> 
+<p> Figure 3 Modes of geomorphological activity </p>"""^^rdf:HTML ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/morphological-type-U> ;
+            sh:resultMessage "More than 1 values on lnd:morphological-type-U->skos:definition" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/geomorphological-agent-EU> ;
+            sh:resultMessage "More than 1 values on lnd:geomorphological-agent-EU->skos:definition" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/simple-erosional-landform-pattern-UL> ;
+            sh:resultMessage "More than 1 values on lnd:simple-erosional-landform-pattern-UL->skos:definition" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/stream-channel-network-integration> ;
+            sh:resultMessage """Node Literal("<p><img src="http://anzsoil.org/resources/yellowbook/Figure4b.png"/></p>
+<p> Figure 4 (b) Integration of channel network. </p>" = None, datatype=rdf:HTML) does not conform to one or more shapes in [ sh:datatype xsd:string ] , [ sh:datatype rdf:langString ]""" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:OrConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ;
+            sh:value """<p><img src="http://anzsoil.org/resources/yellowbook/Figure4b.png"/></p>
+<p> Figure 4 (b) Integration of channel network. </p>"""^^rdf:HTML ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/geomorphological-agent-BI> ;
+            sh:resultMessage "More than 1 values on lnd:geomorphological-agent-BI->skos:definition" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/landform-pattern-descriptions> ;
+            sh:resultMessage """Node Literal("<p>The significant kinds of landform pattern in Australia may be described and differentiated by the following attributes assessed within a circle of about 300 m radius:</p>
+<ul>
+<li>relief</li>
+<li>modal slope</li>
+<li>stream channel occurrence</li>
+<li>mode of geomorphological activity</li>
+<li>geomorphological agent</li>
+<li>status of geomorphological activity</li>
+<li>component landform elements</li>
+</ul>
+<p>The landform pattern glossary is based explicitly on these attributes.</p>" = None, datatype=rdf:HTML) does not conform to one or more shapes in [ sh:datatype xsd:string ] , [ sh:datatype rdf:langString ]""" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:OrConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ;
+            sh:value """<p>The significant kinds of landform pattern in Australia may be described and differentiated by the following attributes assessed within a circle of about 300 m radius:</p>
+<ul>
+<li>relief</li>
+<li>modal slope</li>
+<li>stream channel occurrence</li>
+<li>mode of geomorphological activity</li>
+<li>geomorphological agent</li>
+<li>status of geomorphological activity</li>
+<li>component landform elements</li>
+</ul>
+<p>The landform pattern glossary is based explicitly on these attributes.</p>"""^^rdf:HTML ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/simple-erosional-landform-pattern-VL> ;
+            sh:resultMessage """Node Literal("<p>Very steep low hills is a simple type of erosional landform pattern characterised by Low relief and Very steep modal slope.</p>
+<p>Relief is Low 30-90m (~50m)</p>
+<p>Modal terrain slope is Very steep 56-100% (~70%)</p>" = None, datatype=rdf:HTML) does not conform to one or more shapes in [ sh:datatype xsd:string ] , [ sh:datatype rdf:langString ]""" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:OrConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ;
+            sh:value """<p>Very steep low hills is a simple type of erosional landform pattern characterised by Low relief and Very steep modal slope.</p>
+<p>Relief is Low 30-90m (~50m)</p>
+<p>Modal terrain slope is Very steep 56-100% (~70%)</p>"""^^rdf:HTML ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/geomorphological-agent-WI> ;
+            sh:resultMessage "More than 1 values on lnd:geomorphological-agent-WI->skos:definition" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/simple-erosional-landform-pattern-SH> ;
+            sh:resultMessage """Node Literal("<p>Steep hills is a simple type of erosional landform pattern characterised by High relief and Steep modal slope.</p>
+<p>Relief is High 90-300m (~150m)</p>
+<p>Modal terrain slope is Steep 32-56% (~40%)</p>" = None, datatype=rdf:HTML) does not conform to one or more shapes in [ sh:datatype xsd:string ] , [ sh:datatype rdf:langString ]""" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:OrConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ;
+            sh:value """<p>Steep hills is a simple type of erosional landform pattern characterised by High relief and Steep modal slope.</p>
+<p>Relief is High 90-300m (~150m)</p>
+<p>Modal terrain slope is Steep 32-56% (~40%)</p>"""^^rdf:HTML ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/geomorphological-agent-SH> ;
+            sh:resultMessage "More than 1 values on lnd:geomorphological-agent-SH->skos:definition" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/geomorphological-agent-IM> ;
+            sh:resultMessage "More than 1 values on lnd:geomorphological-agent-IM->skos:definition" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/mode-of-geomorphological-activity> ;
+            sh:resultMessage "More than 1 values on lnd:mode-of-geomorphological-activity->skos:definition" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:ub2bL178C17 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/stream-channel-network-directionality> ;
+            sh:resultMessage "More than 1 values on lnd:stream-channel-network-directionality->skos:definition" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:ub2bL178C17 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/simple-erosional-landform-pattern-RM> ;
+            sh:resultMessage """Node Literal("<p>Rolling mountains is a simple type of erosional landform pattern characterised by Very high relief and Moderately inclined modal slope.</p>
+<p>Relief is Very high &gt;300m (~500m)</p>
+<p>Modal terrain slope is Moderately inclined 10-32% (~20%)</p>" = None, datatype=rdf:HTML) does not conform to one or more shapes in [ sh:datatype xsd:string ] , [ sh:datatype rdf:langString ]""" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:OrConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ;
+            sh:value """<p>Rolling mountains is a simple type of erosional landform pattern characterised by Very high relief and Moderately inclined modal slope.</p>
+<p>Relief is Very high &gt;300m (~500m)</p>
+<p>Modal terrain slope is Moderately inclined 10-32% (~20%)</p>"""^^rdf:HTML ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/simple-erosional-landform-pattern-SH> ;
+            sh:resultMessage "More than 1 values on lnd:simple-erosional-landform-pattern-SH->skos:definition" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/simple-erosional-landform-pattern-RH> ;
+            sh:resultMessage """Node Literal("<p>Rolling hills is a simple type of erosional landform pattern characterised by High relief and Moderately inclined modal slope.</p>
+<p>Relief is High 90-300m (~150m)</p>
+<p>Modal terrain slope is Moderately inclined 10-32% (~20%)</p>" = None, datatype=rdf:HTML) does not conform to one or more shapes in [ sh:datatype xsd:string ] , [ sh:datatype rdf:langString ]""" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:OrConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ;
+            sh:value """<p>Rolling hills is a simple type of erosional landform pattern characterised by High relief and Moderately inclined modal slope.</p>
+<p>Relief is High 90-300m (~150m)</p>
+<p>Modal terrain slope is Moderately inclined 10-32% (~20%)</p>"""^^rdf:HTML ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/geomorphological-agent-WA> ;
+            sh:resultMessage "More than 1 values on lnd:geomorphological-agent-WA->skos:definition" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/morphological-type-M> ;
+            sh:resultMessage "More than 1 values on lnd:morphological-type-M->skos:definition" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/simple-erosional-landform-pattern-VH> ;
+            sh:resultMessage """Node Literal("<p>Very steep hills is a simple type of erosional landform pattern characterised by High relief and Very steep modal slope.</p>
+<p>Relief is High 90-300m (~150m)</p>
+<p>Modal terrain slope is Very steep 56-100% (~70%)</p>" = None, datatype=rdf:HTML) does not conform to one or more shapes in [ sh:datatype xsd:string ] , [ sh:datatype rdf:langString ]""" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:OrConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ;
+            sh:value """<p>Very steep hills is a simple type of erosional landform pattern characterised by High relief and Very steep modal slope.</p>
+<p>Relief is High 90-300m (~150m)</p>
+<p>Modal terrain slope is Very steep 56-100% (~70%)</p>"""^^rdf:HTML ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/simple-erosional-landform-pattern-PM> ;
+            sh:resultMessage "More than 1 values on lnd:simple-erosional-landform-pattern-PM->skos:definition" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/morphological-type-LN> ;
+            sh:resultMessage "More than 1 values on lnd:morphological-type-LN->skos:definition" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/simple-erosional-landform-pattern-SM> ;
+            sh:resultMessage """Node Literal("<p>Steep mountains is a simple type of erosional landform pattern characterised by Very high relief and Steep modal slope.</p>
+<p>Relief is Very high &gt; 300m (~500m)</p>
+<p>Modal terrain slope is Steep 32-56% (~40%)</p>" = None, datatype=rdf:HTML) does not conform to one or more shapes in [ sh:datatype xsd:string ] , [ sh:datatype rdf:langString ]""" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:OrConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ;
+            sh:value """<p>Steep mountains is a simple type of erosional landform pattern characterised by Very high relief and Steep modal slope.</p>
+<p>Relief is Very high &gt; 300m (~500m)</p>
+<p>Modal terrain slope is Steep 32-56% (~40%)</p>"""^^rdf:HTML ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/landform-pattern-descriptions> ;
+            sh:resultMessage """Node Literal("<p>The significant kinds of landform pattern in Australia may be described and differentiated by the following attributes assessed within a circle of about 300 m radius:</p>
+<ul>
+<li>relief</li>
+<li>modal slope</li>
+<li>stream channel occurrence</li>
+<li>mode of geomorphological activity</li>
+<li>geomorphological agent</li>
+<li>status of geomorphological activity</li>
+<li>component landform elements</li>
+</ul>
+<p>The landform pattern glossary is based explicitly on these attributes.</p>" = None, datatype=rdf:HTML) does not conform to one or more shapes in [ sh:datatype xsd:string ] , [ sh:datatype rdf:langString ]""" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:OrConstraintComponent ;
+            sh:sourceShape _:ub2bL178C17 ;
+            sh:value """<p>The significant kinds of landform pattern in Australia may be described and differentiated by the following attributes assessed within a circle of about 300 m radius:</p>
+<ul>
+<li>relief</li>
+<li>modal slope</li>
+<li>stream channel occurrence</li>
+<li>mode of geomorphological activity</li>
+<li>geomorphological agent</li>
+<li>status of geomorphological activity</li>
+<li>component landform elements</li>
+</ul>
+<p>The landform pattern glossary is based explicitly on these attributes.</p>"""^^rdf:HTML ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/morphological-type-MN> ;
+            sh:resultMessage "More than 1 values on lnd:morphological-type-MN->skos:definition" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/geomorphological-agent-HU> ;
+            sh:resultMessage "More than 1 values on lnd:geomorphological-agent-HU->skos:definition" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/landform-pattern-descriptions> ;
+            sh:resultMessage "More than 1 values on lnd:landform-pattern-descriptions->skos:definition" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/landform-element-BKP> ;
+            sh:resultMessage "More than 1 values on lnd:landform-element-BKP->skos:definition" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/slope-class-LE> ;
+            sh:resultMessage "More than 1 values on lnd:slope-class-LE->skos:definition" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/morphological-type-MX> ;
+            sh:resultMessage "More than 1 values on lnd:morphological-type-MX->skos:definition" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/streamwise-channel-pattern> ;
+            sh:resultMessage """Node Literal("<p><img src="http://anzsoil.org/resources/yellowbook/Figure4a.png"/></p>
+<p> Figure 4 (a) Stream-wise channel patterns. </p>" = None, datatype=rdf:HTML) does not conform to one or more shapes in [ sh:datatype xsd:string ] , [ sh:datatype rdf:langString ]""" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:OrConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ;
+            sh:value """<p><img src="http://anzsoil.org/resources/yellowbook/Figure4a.png"/></p>
+<p> Figure 4 (a) Stream-wise channel patterns. </p>"""^^rdf:HTML ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/stream-channel-network-integration> ;
+            sh:resultMessage "More than 1 values on lnd:stream-channel-network-integration->skos:definition" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:ub2bL178C17 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/simple-erosional-landform-pattern-UP> ;
+            sh:resultMessage """Node Literal("<p>Undulating plain is a simple type of erosional landform pattern characterised by Extremely low relief and Gently inclined modal slope.</p>
+<p>Relief is Extremely low &lt; 9m (~5m)</p>
+<p>Modal terrain slope is Gently inclined 3-10% (~6%)</p>" = None, datatype=rdf:HTML) does not conform to one or more shapes in [ sh:datatype xsd:string ] , [ sh:datatype rdf:langString ]""" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:OrConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ;
+            sh:value """<p>Undulating plain is a simple type of erosional landform pattern characterised by Extremely low relief and Gently inclined modal slope.</p>
+<p>Relief is Extremely low &lt; 9m (~5m)</p>
+<p>Modal terrain slope is Gently inclined 3-10% (~6%)</p>"""^^rdf:HTML ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/simple-erosional-landform-pattern-GR> ;
+            sh:resultMessage """Node Literal("<p>Gently undulating rises is a simple type of erosional landform pattern characterised by Very low relief and Very gently inclined modal slope.</p>
+<p>Relief is Very low &lt; 9-30m (~15m)</p>
+<p>Modal terrain slope is Very gently inclined 1-3% (~2%)</p>" = None, datatype=rdf:HTML) does not conform to one or more shapes in [ sh:datatype xsd:string ] , [ sh:datatype rdf:langString ]""" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:OrConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ;
+            sh:value """<p>Gently undulating rises is a simple type of erosional landform pattern characterised by Very low relief and Very gently inclined modal slope.</p>
+<p>Relief is Very low &lt; 9-30m (~15m)</p>
+<p>Modal terrain slope is Very gently inclined 1-3% (~2%)</p>"""^^rdf:HTML ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/simple-erosional-landform-pattern-VM> ;
+            sh:resultMessage """Node Literal("<p>Very steep mountains is a simple type of erosional landform pattern characterised by Very high relief and Very steep modal slope.</p>
+<p>Relief is Very high &gt; 300m (~500m)</p>
+<p>Modal terrain slope is Very steep 56-100% (~70%)</p>" = None, datatype=rdf:HTML) does not conform to one or more shapes in [ sh:datatype xsd:string ] , [ sh:datatype rdf:langString ]""" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:OrConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ;
+            sh:value """<p>Very steep mountains is a simple type of erosional landform pattern characterised by Very high relief and Very steep modal slope.</p>
+<p>Relief is Very high &gt; 300m (~500m)</p>
+<p>Modal terrain slope is Very steep 56-100% (~70%)</p>"""^^rdf:HTML ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/simple-erosional-landform-pattern-UR> ;
+            sh:resultMessage "More than 1 values on lnd:simple-erosional-landform-pattern-UR->skos:definition" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/simple-erosional-landform-pattern-LP> ;
+            sh:resultMessage """Node Literal("<p>Level plain is a simple type of erosional landform pattern characterised by Extremely low relief and Level modal slope.</p>
+<p>Relief is Extremely low &lt; 9m (~5m)</p>
+<p>Modal terrain slope is Level &lt; 1% (~1:300)</p>" = None, datatype=rdf:HTML) does not conform to one or more shapes in [ sh:datatype xsd:string ] , [ sh:datatype rdf:langString ]""" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:OrConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ;
+            sh:value """<p>Level plain is a simple type of erosional landform pattern characterised by Extremely low relief and Level modal slope.</p>
+<p>Relief is Extremely low &lt; 9m (~5m)</p>
+<p>Modal terrain slope is Level &lt; 1% (~1:300)</p>"""^^rdf:HTML ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/simple-erosional-landform-pattern-RH> ;
+            sh:resultMessage "More than 1 values on lnd:simple-erosional-landform-pattern-RH->skos:definition" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/morphological-type-LI> ;
+            sh:resultMessage "More than 1 values on lnd:morphological-type-LI->skos:definition" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/simple-erosional-landform-pattern-RL> ;
+            sh:resultMessage "More than 1 values on lnd:simple-erosional-landform-pattern-RL->skos:definition" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/morphological-type-MI> ;
+            sh:resultMessage "More than 1 values on lnd:morphological-type-MI->skos:definition" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/simple-erosional-landform-pattern-GP> ;
+            sh:resultMessage """Node Literal("<p>Gently undulating plain is a simple type of erosional landform pattern characterised by Extremely low relief and Very gently inclined modal slope.</p>
+<p>Relief is Extremely low &lt; 9m (~5m)</p>
+<p>Modal terrain slope is Very gently inclined 1-3% (~2%)</p>" = None, datatype=rdf:HTML) does not conform to one or more shapes in [ sh:datatype xsd:string ] , [ sh:datatype rdf:langString ]""" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:OrConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ;
+            sh:value """<p>Gently undulating plain is a simple type of erosional landform pattern characterised by Extremely low relief and Very gently inclined modal slope.</p>
+<p>Relief is Extremely low &lt; 9m (~5m)</p>
+<p>Modal terrain slope is Very gently inclined 1-3% (~2%)</p>"""^^rdf:HTML ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/simple-erosional-landform-pattern-SL> ;
+            sh:resultMessage "More than 1 values on lnd:simple-erosional-landform-pattern-SL->skos:definition" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/streamwise-channel-pattern> ;
+            sh:resultMessage "More than 1 values on lnd:streamwise-channel-pattern->skos:definition" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:ub2bL178C17 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/landform-pattern-ALP> ;
+            sh:resultMessage """Node Literal("<p>level landform pattern with extremely low relief. The shallow to deep alluvial stream channels are sparse to widely spaced, forming a unidirectional, integrated network. There may be frequently active erosion and aggradation by channelled and overbank stream flow, or the landforms may be relict from these proceses. </p>
+<p>Typical elements: stream channel (stream bed and bank), plain (dominant).</p>
+<p>Common elements: bar, scroll, levee, backplain, swamp.</p>
+<p>Occasional elements: ox-bow, flood-out, lake.</p>
+<p>Included types of landform pattern are: flood plain, bar plain, meander plain, covered plain, anastomotic plain, delta, stagnant alluvial plain, terrace, terraced land. </p>" = None, datatype=rdf:HTML) does not conform to one or more shapes in [ sh:datatype xsd:string ] , [ sh:datatype rdf:langString ]""" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:OrConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ;
+            sh:value """<p>level landform pattern with extremely low relief. The shallow to deep alluvial stream channels are sparse to widely spaced, forming a unidirectional, integrated network. There may be frequently active erosion and aggradation by channelled and overbank stream flow, or the landforms may be relict from these proceses. </p>
+<p>Typical elements: stream channel (stream bed and bank), plain (dominant).</p>
+<p>Common elements: bar, scroll, levee, backplain, swamp.</p>
+<p>Occasional elements: ox-bow, flood-out, lake.</p>
+<p>Included types of landform pattern are: flood plain, bar plain, meander plain, covered plain, anastomotic plain, delta, stagnant alluvial plain, terrace, terraced land. </p>"""^^rdf:HTML ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/geomorphological-agent-VO> ;
+            sh:resultMessage "More than 1 values on lnd:geomorphological-agent-VO->skos:definition" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/simple-erosional-landform-pattern-VM> ;
+            sh:resultMessage "More than 1 values on lnd:simple-erosional-landform-pattern-VM->skos:definition" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/geomorphological-agent-CH> ;
+            sh:resultMessage "More than 1 values on lnd:geomorphological-agent-CH->skos:definition" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/simple-erosional-landform-pattern-PH> ;
+            sh:resultMessage """Node Literal("<p>Precipitous hills is a simple type of erosional landform pattern characterised by High relief and Precipitous modal slope.</p>
+<p>Relief is High 90-300m (~150m)</p>
+<p>Modal terrain slope is Precipitous &gt;100% (~150%)</p>" = None, datatype=rdf:HTML) does not conform to one or more shapes in [ sh:datatype xsd:string ] , [ sh:datatype rdf:langString ]""" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:OrConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ;
+            sh:value """<p>Precipitous hills is a simple type of erosional landform pattern characterised by High relief and Precipitous modal slope.</p>
+<p>Relief is High 90-300m (~150m)</p>
+<p>Modal terrain slope is Precipitous &gt;100% (~150%)</p>"""^^rdf:HTML ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/landform-pattern-descriptions> ;
+            sh:resultMessage "More than 1 values on lnd:landform-pattern-descriptions->skos:definition" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:ub2bL178C17 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/simple-erosional-landform-patterns> ;
+            sh:resultMessage "Node Literal(\"Simple erosional landform patterns are based on relief and modal slope. \" = None, datatype=rdf:HTML) does not conform to one or more shapes in [ sh:datatype xsd:string ] , [ sh:datatype rdf:langString ]" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:OrConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ;
+            sh:value "Simple erosional landform patterns are based on relief and modal slope. "^^rdf:HTML ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/simple-erosional-landform-pattern-VL> ;
+            sh:resultMessage "More than 1 values on lnd:simple-erosional-landform-pattern-VL->skos:definition" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/landform-element-descriptions> ;
+            sh:resultMessage "More than 1 values on lnd:landform-element-descriptions->skos:definition" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:ub2bL178C17 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/morphological-types> ;
+            sh:resultMessage "Node Literal(\"<p><img src=\"http://anzsoil.org/resources/yellowbook/Figure1.png\"/></p>Landform elements fall into morphological types as sketched in Figure 1. Ten types are distinguished.<p/>\" = None, datatype=rdf:HTML) does not conform to one or more shapes in [ sh:datatype xsd:string ] , [ sh:datatype rdf:langString ]" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:OrConstraintComponent ;
+            sh:sourceShape _:ub2bL178C17 ;
+            sh:value "<p><img src=\"http://anzsoil.org/resources/yellowbook/Figure1.png\"/></p>Landform elements fall into morphological types as sketched in Figure 1. Ten types are distinguished.<p/>"^^rdf:HTML ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/landform-pattern-ANA> ;
+            sh:resultMessage """Node Literal("<p>flood plain with slowly migrating, deep alluvial channels, usually moderately spaced, forming a divergent to unidirectional, integrated reticulated network. There is frequently active aggradation by over-bank and channelled stream flow. </p>
+<p>Typical elements: stream channel (stream bed and bank), levee, backplain (dominant).</p>
+<p>Common element: swamp.</p>
+<p>Compare with other types under alluvial plain and flood plain. </p>" = None, datatype=rdf:HTML) does not conform to one or more shapes in [ sh:datatype xsd:string ] , [ sh:datatype rdf:langString ]""" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:OrConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ;
+            sh:value """<p>flood plain with slowly migrating, deep alluvial channels, usually moderately spaced, forming a divergent to unidirectional, integrated reticulated network. There is frequently active aggradation by over-bank and channelled stream flow. </p>
+<p>Typical elements: stream channel (stream bed and bank), levee, backplain (dominant).</p>
+<p>Common element: swamp.</p>
+<p>Compare with other types under alluvial plain and flood plain. </p>"""^^rdf:HTML ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/morphological-type-MA> ;
+            sh:resultMessage "More than 1 values on lnd:morphological-type-MA->skos:definition" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/simple-erosional-landform-pattern-RR> ;
+            sh:resultMessage "More than 1 values on lnd:simple-erosional-landform-pattern-RR->skos:definition" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/simple-erosional-landform-pattern-RR> ;
+            sh:resultMessage """Node Literal("<p>Rolling rises is a simple type of erosional landform pattern characterised by Very low relief and Moderately inclined modal slope.</p>
+<p>Relief is Very low 9-30m (~15m)</p>
+<p>Modal terrain slope is Moderately inclined 10-32% (~20%)</p>" = None, datatype=rdf:HTML) does not conform to one or more shapes in [ sh:datatype xsd:string ] , [ sh:datatype rdf:langString ]""" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:OrConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ;
+            sh:value """<p>Rolling rises is a simple type of erosional landform pattern characterised by Very low relief and Moderately inclined modal slope.</p>
+<p>Relief is Very low 9-30m (~15m)</p>
+<p>Modal terrain slope is Moderately inclined 10-32% (~20%)</p>"""^^rdf:HTML ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/landform-element-descriptions> ;
+            sh:resultMessage """Node Literal("<p>A landform element may be described by the following attributes, assessed withiin a circle of about 20 m radius:</p>
+<ul>
+<li>slope</li>
+<li>morphological type</li>
+<li>dimensions</li>
+<li>mode of geomorphological activity</li>
+<li>geomorphological agent</li>
+</ul>
+<p>These will establish most of the distinctions between landform elements that are implied by their geomorphological names. The glossary of types of landform elements occurring in Australia refers explicitly to this set of attributes. A landform element that has been described mayb thus be assigne a type name.</p>" = None, datatype=rdf:HTML) does not conform to one or more shapes in [ sh:datatype xsd:string ] , [ sh:datatype rdf:langString ]""" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:OrConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ;
+            sh:value """<p>A landform element may be described by the following attributes, assessed withiin a circle of about 20 m radius:</p>
+<ul>
+<li>slope</li>
+<li>morphological type</li>
+<li>dimensions</li>
+<li>mode of geomorphological activity</li>
+<li>geomorphological agent</li>
+</ul>
+<p>These will establish most of the distinctions between landform elements that are implied by their geomorphological names. The glossary of types of landform elements occurring in Australia refers explicitly to this set of attributes. A landform element that has been described mayb thus be assigne a type name.</p>"""^^rdf:HTML ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/simple-erosional-landform-pattern-UH> ;
+            sh:resultMessage "More than 1 values on lnd:simple-erosional-landform-pattern-UH->skos:definition" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform> ;
+            sh:resultMessage "Less than 1 values on <http://registry.it.csiro.au/def/soil/au/asls/landform>->skos:prefLabel" ;
+            sh:resultPath skos:prefLabel ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape [ sh:minCount 1 ;
+                    sh:or ( [ sh:datatype xsd:string ] [ sh:datatype rdf:langString ] ) ;
+                    sh:path skos:prefLabel ;
+                    sh:uniqueLang true ] ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/location-within-the-landform-element-M> ;
+            sh:resultMessage "More than 1 values on lnd:location-within-the-landform-element-M->skos:definition" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/location-within-the-landform-element-B> ;
+            sh:resultMessage "More than 1 values on lnd:location-within-the-landform-element-B->skos:definition" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/simple-erosional-landform-pattern-GP> ;
+            sh:resultMessage "More than 1 values on lnd:simple-erosional-landform-pattern-GP->skos:definition" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/simple-erosional-landform-pattern-RL> ;
+            sh:resultMessage """Node Literal("<p>Rolling low hills is a simple type of erosional landform pattern characterised by Low relief and Moderately inclined modal slope.</p>
+<p>Relief is Low 30-90m (~50m)</p>
+<p>Modal terrain slope is Moderately inclined 10-32% (~20%)</p>" = None, datatype=rdf:HTML) does not conform to one or more shapes in [ sh:datatype xsd:string ] , [ sh:datatype rdf:langString ]""" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:OrConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ;
+            sh:value """<p>Rolling low hills is a simple type of erosional landform pattern characterised by Low relief and Moderately inclined modal slope.</p>
+<p>Relief is Low 30-90m (~50m)</p>
+<p>Modal terrain slope is Moderately inclined 10-32% (~20%)</p>"""^^rdf:HTML ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform> ;
+            sh:resultMessage "2.1.7 Each vocabulary _MUST_ indicate its source, or that it has no source, by use of either the prov:wasDerivedFrom, dcterms:source, dcterms:provenance properties" ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:XoneConstraintComponent ;
+            sh:sourceShape <https://w3id.org/profile/vocpub/shapes/Requirement-2.1.7> ;
+            sh:value <http://registry.it.csiro.au/def/soil/au/asls/landform> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/relief-class-R> ;
+            sh:resultMessage "More than 1 values on lnd:relief-class-R->skos:definition" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/morphological-type-UA> ;
+            sh:resultMessage "More than 1 values on lnd:morphological-type-UA->skos:definition" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/morphological-type-UX> ;
+            sh:resultMessage "More than 1 values on lnd:morphological-type-UX->skos:definition" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/morphological-type-D> ;
+            sh:resultMessage "More than 1 values on lnd:morphological-type-D->skos:definition" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/morphological-type-S> ;
+            sh:resultMessage "More than 1 values on lnd:morphological-type-S->skos:definition" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/simple-erosional-landform-pattern-RP> ;
+            sh:resultMessage """Node Literal("<p>Rolling plain is a simple type of erosional landform pattern characterised by Extremely low relief and Moderately inclined modal slope.</p>
+<p>Relief is Extremely low &lt; 9m (~5m)</p>
+<p>Modal terrain slope is Moderately inclined 10-32% (~20%)</p>" = None, datatype=rdf:HTML) does not conform to one or more shapes in [ sh:datatype xsd:string ] , [ sh:datatype rdf:langString ]""" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:OrConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ;
+            sh:value """<p>Rolling plain is a simple type of erosional landform pattern characterised by Extremely low relief and Moderately inclined modal slope.</p>
+<p>Relief is Extremely low &lt; 9m (~5m)</p>
+<p>Modal terrain slope is Moderately inclined 10-32% (~20%)</p>"""^^rdf:HTML ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/morphological-type-UI> ;
+            sh:resultMessage "More than 1 values on lnd:morphological-type-UI->skos:definition" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/simple-erosional-landform-pattern-VH> ;
+            sh:resultMessage "More than 1 values on lnd:simple-erosional-landform-pattern-VH->skos:definition" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/geomorphological-agent-WM> ;
+            sh:resultMessage "More than 1 values on lnd:geomorphological-agent-WM->skos:definition" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/morphological-type-L> ;
+            sh:resultMessage "More than 1 values on lnd:morphological-type-L->skos:definition" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/simple-erosional-landform-pattern-UL> ;
+            sh:resultMessage """Node Literal("<p>Undulating low hills is a simple type of erosional landform pattern characterised by Low relief and Gently inclined modal slope.</p>
+<p>Relief is Low 30-90m (~50m)</p>
+<p>Modal terrain slope is Gently inclined &lt; 3-10% (~6%)</p>" = None, datatype=rdf:HTML) does not conform to one or more shapes in [ sh:datatype xsd:string ] , [ sh:datatype rdf:langString ]""" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:OrConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ;
+            sh:value """<p>Undulating low hills is a simple type of erosional landform pattern characterised by Low relief and Gently inclined modal slope.</p>
+<p>Relief is Low 30-90m (~50m)</p>
+<p>Modal terrain slope is Gently inclined &lt; 3-10% (~6%)</p>"""^^rdf:HTML ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/geomorphological-agent-DI> ;
+            sh:resultMessage "More than 1 values on lnd:geomorphological-agent-DI->skos:definition" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/morphological-types> ;
+            sh:resultMessage "Node Literal(\"<p><img src=\"http://anzsoil.org/resources/yellowbook/Figure1.png\"/></p>Landform elements fall into morphological types as sketched in Figure 1. Ten types are distinguished.<p/>\" = None, datatype=rdf:HTML) does not conform to one or more shapes in [ sh:datatype xsd:string ] , [ sh:datatype rdf:langString ]" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:OrConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ;
+            sh:value "<p><img src=\"http://anzsoil.org/resources/yellowbook/Figure1.png\"/></p>Landform elements fall into morphological types as sketched in Figure 1. Ten types are distinguished.<p/>"^^rdf:HTML ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/simple-erosional-landform-patterns> ;
+            sh:resultMessage "More than 1 values on lnd:simple-erosional-landform-patterns->skos:definition" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:ub2bL178C17 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/simple-erosional-landform-pattern-PM> ;
+            sh:resultMessage """Node Literal("<p>Precipitous mountains is a simple type of erosional landform pattern characterised by Very high relief and Precipitous modal slope.</p>
+<p>Relief is Very high &gt;300m (~500m)</p>
+<p>Modal terrain slope is Precipitous &gt;100% (~150%)</p>" = None, datatype=rdf:HTML) does not conform to one or more shapes in [ sh:datatype xsd:string ] , [ sh:datatype rdf:langString ]""" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:OrConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ;
+            sh:value """<p>Precipitous mountains is a simple type of erosional landform pattern characterised by Very high relief and Precipitous modal slope.</p>
+<p>Relief is Very high &gt;300m (~500m)</p>
+<p>Modal terrain slope is Precipitous &gt;100% (~150%)</p>"""^^rdf:HTML ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/location-within-the-landform-element-T> ;
+            sh:resultMessage "More than 1 values on lnd:location-within-the-landform-element-T->skos:definition" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/simple-erosional-landform-pattern-LP> ;
+            sh:resultMessage "More than 1 values on lnd:simple-erosional-landform-pattern-LP->skos:definition" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/geomorphological-agent-TI> ;
+            sh:resultMessage "More than 1 values on lnd:geomorphological-agent-TI->skos:definition" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/geomorphological-agent-SM> ;
+            sh:resultMessage "More than 1 values on lnd:geomorphological-agent-SM->skos:definition" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/stream-channel-network-directionality> ;
+            sh:resultMessage """Node Literal("<p><img src="http://anzsoil.org/resources/yellowbook/Figure4c.png"/></p>
+<p> Figure 4 (c) Channel network directionality. </p>" = None, datatype=rdf:HTML) does not conform to one or more shapes in [ sh:datatype xsd:string ] , [ sh:datatype rdf:langString ]""" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:OrConstraintComponent ;
+            sh:sourceShape _:ub2bL178C17 ;
+            sh:value """<p><img src="http://anzsoil.org/resources/yellowbook/Figure4c.png"/></p>
+<p> Figure 4 (c) Channel network directionality. </p>"""^^rdf:HTML ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/simple-erosional-landform-pattern-SR> ;
+            sh:resultMessage "More than 1 values on lnd:simple-erosional-landform-pattern-SR->skos:definition" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/geomorphological-agent-GL> ;
+            sh:resultMessage "More than 1 values on lnd:geomorphological-agent-GL->skos:definition" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/morphological-type-UN> ;
+            sh:resultMessage "More than 1 values on lnd:morphological-type-UN->skos:definition" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/geomorphological-agent-FR> ;
+            sh:resultMessage "More than 1 values on lnd:geomorphological-agent-FR->skos:definition" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/morphological-type-LA> ;
+            sh:resultMessage "More than 1 values on lnd:morphological-type-LA->skos:definition" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/simple-erosional-landform-pattern-UP> ;
+            sh:resultMessage "More than 1 values on lnd:simple-erosional-landform-pattern-UP->skos:definition" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/simple-erosional-landform-pattern-RM> ;
+            sh:resultMessage "More than 1 values on lnd:simple-erosional-landform-pattern-RM->skos:definition" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/simple-erosional-landform-pattern-RP> ;
+            sh:resultMessage "More than 1 values on lnd:simple-erosional-landform-pattern-RP->skos:definition" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/morphological-type-V> ;
+            sh:resultMessage "More than 1 values on lnd:morphological-type-V->skos:definition" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/simple-erosional-landform-patterns> ;
+            sh:resultMessage "More than 1 values on lnd:simple-erosional-landform-patterns->skos:definition" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/simple-erosional-landform-pattern-PH> ;
+            sh:resultMessage "More than 1 values on lnd:simple-erosional-landform-pattern-PH->skos:definition" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/stream-channel-network-integration> ;
+            sh:resultMessage "More than 1 values on lnd:stream-channel-network-integration->skos:definition" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/simple-erosional-landform-pattern-UR> ;
+            sh:resultMessage """Node Literal("<p>Undulating rises is a simple type of erosional landform pattern characterised by Very low relief and Gently inclined modal slope.</p>
+<p>Relief is Very low 9-30m (~15m)</p>
+<p>Modal terrain slope is Gently inclined 3-10% (~6%)</p>" = None, datatype=rdf:HTML) does not conform to one or more shapes in [ sh:datatype xsd:string ] , [ sh:datatype rdf:langString ]""" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:OrConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ;
+            sh:value """<p>Undulating rises is a simple type of erosional landform pattern characterised by Very low relief and Gently inclined modal slope.</p>
+<p>Relief is Very low 9-30m (~15m)</p>
+<p>Modal terrain slope is Gently inclined 3-10% (~6%)</p>"""^^rdf:HTML ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/stream-channel-network-directionality> ;
+            sh:resultMessage """Node Literal("<p><img src="http://anzsoil.org/resources/yellowbook/Figure4c.png"/></p>
+<p> Figure 4 (c) Channel network directionality. </p>" = None, datatype=rdf:HTML) does not conform to one or more shapes in [ sh:datatype xsd:string ] , [ sh:datatype rdf:langString ]""" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:OrConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ;
+            sh:value """<p><img src="http://anzsoil.org/resources/yellowbook/Figure4c.png"/></p>
+<p> Figure 4 (c) Channel network directionality. </p>"""^^rdf:HTML ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/geomorphological-agent-SO> ;
+            sh:resultMessage "More than 1 values on lnd:geomorphological-agent-SO->skos:definition" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/simple-erosional-landform-patterns> ;
+            sh:resultMessage "Node Literal(\"Simple erosional landform patterns are based on relief and modal slope. \" = None, datatype=rdf:HTML) does not conform to one or more shapes in [ sh:datatype xsd:string ] , [ sh:datatype rdf:langString ]" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:OrConstraintComponent ;
+            sh:sourceShape _:ub2bL178C17 ;
+            sh:value "Simple erosional landform patterns are based on relief and modal slope. "^^rdf:HTML ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/geomorphological-agent-GR> ;
+            sh:resultMessage "More than 1 values on lnd:geomorphological-agent-GR->skos:definition" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/stream-channel-network-integration> ;
+            sh:resultMessage """Node Literal("<p><img src="http://anzsoil.org/resources/yellowbook/Figure4b.png"/></p>
+<p> Figure 4 (b) Integration of channel network. </p>" = None, datatype=rdf:HTML) does not conform to one or more shapes in [ sh:datatype xsd:string ] , [ sh:datatype rdf:langString ]""" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:OrConstraintComponent ;
+            sh:sourceShape _:ub2bL178C17 ;
+            sh:value """<p><img src="http://anzsoil.org/resources/yellowbook/Figure4b.png"/></p>
+<p> Figure 4 (b) Integration of channel network. </p>"""^^rdf:HTML ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/landform-pattern-ALF> ;
+            sh:resultMessage """Node Literal("<p>level (less than 1% slope) to very gently inclined, complex landform pattern of extremely low relief. The rapidly migrating alluvial stream channels are shallow to moderately deep, locally numerous, but elsewhere widely spaced. The channels form a centrifugal to divergent, integrated, reticulated to distributary pattern. The landform pattern includes areas that are bar plains, being aggraded or eroded by frequently active channelled stream flow, and other areas comprising terraces or stagnant alluvial plains with slopes that are greater than usual, formed by channelled stream flow but now relict. Incision in the upslope area may give rise to an erosional stream bed between scarps. </p>
+<p>Typical elements: stream bed, bar, plain.</p>
+<p>Common element: scarp.</p>
+<p>Compare with sheet-flood fan and pediment. </p>" = None, datatype=rdf:HTML) does not conform to one or more shapes in [ sh:datatype xsd:string ] , [ sh:datatype rdf:langString ]""" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:OrConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ;
+            sh:value """<p>level (less than 1% slope) to very gently inclined, complex landform pattern of extremely low relief. The rapidly migrating alluvial stream channels are shallow to moderately deep, locally numerous, but elsewhere widely spaced. The channels form a centrifugal to divergent, integrated, reticulated to distributary pattern. The landform pattern includes areas that are bar plains, being aggraded or eroded by frequently active channelled stream flow, and other areas comprising terraces or stagnant alluvial plains with slopes that are greater than usual, formed by channelled stream flow but now relict. Incision in the upslope area may give rise to an erosional stream bed between scarps. </p>
+<p>Typical elements: stream bed, bar, plain.</p>
+<p>Common element: scarp.</p>
+<p>Compare with sheet-flood fan and pediment. </p>"""^^rdf:HTML ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/simple-erosional-landform-pattern-GR> ;
+            sh:resultMessage "More than 1 values on lnd:simple-erosional-landform-pattern-GR->skos:definition" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/morphological-type-LX> ;
+            sh:resultMessage "More than 1 values on lnd:morphological-type-LX->skos:definition" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/simple-erosional-landform-pattern-SM> ;
+            sh:resultMessage "More than 1 values on lnd:simple-erosional-landform-pattern-SM->skos:definition" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/mode-of-geomorphological-activity> ;
+            sh:resultMessage "More than 1 values on lnd:mode-of-geomorphological-activity->skos:definition" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/stream-channel-network-directionality> ;
+            sh:resultMessage "More than 1 values on lnd:stream-channel-network-directionality->skos:definition" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/morphological-types> ;
+            sh:resultMessage "More than 1 values on lnd:morphological-types->skos:definition" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:ub2bL178C17 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/geomorphological-agent-OV> ;
+            sh:resultMessage "More than 1 values on lnd:geomorphological-agent-OV->skos:definition" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/landform-pattern-ALP> ;
+            sh:resultMessage "More than 1 values on lnd:landform-pattern-ALP->skos:definition" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/simple-erosional-landform-pattern-B> ;
+            sh:resultMessage "More than 1 values on lnd:simple-erosional-landform-pattern-B->skos:definition" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://registry.it.csiro.au/def/soil/au/asls/landform/landform-element-descriptions> ;
+            sh:resultMessage "More than 1 values on lnd:landform-element-descriptions->skos:definition" ;
+            sh:resultPath skos:definition ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxCountConstraintComponent ;
+            sh:sourceShape _:ub2bL231C17 ] .
+
+_:N02a7f90c755245d49c361cc24acc0817 rdf:first [ sh:datatype rdf:langString ] ;
+    rdf:rest () .
+
+_:N26d716ed7ad142e999606465001529c9 sh:datatype rdf:langString .
+
+_:N6e74ae6b4d4b4eac91d67b6da55d6ad7 rdf:first [ sh:datatype xsd:string ] ;
+    rdf:rest _:N02a7f90c755245d49c361cc24acc0817 .
+
+_:N96761b0255d54613b760a0a79d0cd5ac rdf:first _:N26d716ed7ad142e999606465001529c9 ;
+    rdf:rest () .
+
+_:Nb0a14ce1fead44b8bf7038214697d847 rdf:first [ sh:datatype xsd:string ] ;
+    rdf:rest _:N96761b0255d54613b760a0a79d0cd5ac .
+
+_:ub2bL178C17 sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:or _:N6e74ae6b4d4b4eac91d67b6da55d6ad7 ;
+    sh:path skos:definition .
+
+_:ub2bL231C17 sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:or _:Nb0a14ce1fead44b8bf7038214697d847 ;
+    sh:path skos:definition .
+
